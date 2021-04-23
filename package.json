@@ -1,0 +1,26 @@
+{
+  "name": "ts_jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanatorn-Mokkhao/pratice_ts_jest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanatorn-Mokkhao/pratice_ts_jest/issues"
+  },
+  "homepage": "https://github.com/Tanatorn-Mokkhao/pratice_ts_jest#readme",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
