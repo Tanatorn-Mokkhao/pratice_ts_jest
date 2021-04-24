@@ -10,7 +10,7 @@ var UserRoute = /** @class */ (function () {
         this.router = express_1.Router();
     }
     UserRoute.prototype.routes = function () {
-        this.router.get("/test", user_1.default.testapi);
+        this.router.post("/test", user_1.default.testapi);
     };
     return UserRoute;
 }());

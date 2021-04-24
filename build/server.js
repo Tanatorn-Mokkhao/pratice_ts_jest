@@ -50,3 +50,4 @@ var Server = /** @class */ (function () {
 }());
 var server = new Server;
 server.start();
+exports.default = server.app;
