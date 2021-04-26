@@ -19,6 +19,14 @@ describe("Controller user.ts", () => {
         const res = await request(app).post("/api/test").send({ payload });
         expect(res.status).toBe(200);
     })
+    it("find user", async () => {
+        const res = await request(app).post("/api/get/test").send({ payload });
+     
+        expect(res.body.data.username).toBe(payload.username);
+        expect(res.body.data).toHaveProperty("username");
+        expect(res.body.data).toHaveProperty("email");
+        expect(res.body.data).toHaveProperty("password");
+    })
 
 
 })
