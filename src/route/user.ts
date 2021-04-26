@@ -9,6 +9,7 @@ class UserRoute {
     }
     routes() {
         this.router.post("/test", controller.testapi);
+        this.router.post("/get/test", controller.findUser);
     }
 }
 

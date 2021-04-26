@@ -71,4 +71,19 @@ describe("Controller user.ts", function () {
             }
         });
     }); });
+    it("find user", function () { return __awaiter(void 0, void 0, void 0, function () {
+        var res;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, supertest_1.default(server_1.default).post("/api/get/test").send({ payload: payload })];
+                case 1:
+                    res = _a.sent();
+                    expect(res.body.data.username).toBe(payload.username);
+                    expect(res.body.data).toHaveProperty("username");
+                    expect(res.body.data).toHaveProperty("email");
+                    expect(res.body.data).toHaveProperty("password");
+                    return [2 /*return*/];
+            }
+        });
+    }); });
 });

@@ -18,6 +18,16 @@ var UserController = /** @class */ (function () {
             }
         });
     };
+    UserController.prototype.findUser = function (req, res) {
+        var payload = req.body.payload;
+        user_1.default.findOne({ username: payload.username }).exec(function (error, data) {
+            if (error)
+                return res.status(400).json({ error: error });
+            if (data) {
+                return res.status(200).json({ data: data });
+            }
+        });
+    };
     return UserController;
 }());
 exports.default = new UserController;

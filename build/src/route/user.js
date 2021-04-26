@@ -11,6 +11,7 @@ var UserRoute = /** @class */ (function () {
     }
     UserRoute.prototype.routes = function () {
         this.router.post("/test", user_1.default.testapi);
+        this.router.post("/get/test", user_1.default.findUser);
     };
     return UserRoute;
 }());
